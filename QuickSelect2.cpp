@@ -73,16 +73,14 @@ void quickSelect2(const std::string& header, std::vector<int> data) {
         return;
     }
 
-    std::set<int> keys = {0, n / 4, n / 2, 3 * n / 4, n - 1};
+    std::set<int> keys = {0, (n + 3) / 4 - 1, (n + 1) / 2 - 1, 3 * (n + 1) / 4 - 1, n - 1};
 
     quickSelect(data, 0, n - 1, keys);
 
     std::cout << header << std::endl;
     std::cout << "Min: " << data[0] << std::endl;
-    std::cout << "P25: " << data[n / 4] << std::endl;
-    std::cout << "P50: " << data[n / 2] << std::endl;
-    std::cout << "P75: " << data[3 * n / 4] << std::endl;
+    std::cout << "P25: " << data[(n + 3) / 4 - 1] << std::endl;
+    std::cout << "P50: " << data[(n + 1) / 2 - 1] << std::endl;
+    std::cout << "P75: " << data[3 * (n + 1) / 4 - 1] << std::endl;
     std::cout << "Max: " << data[n - 1] << std::endl;
 }
-
-

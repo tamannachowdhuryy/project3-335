@@ -47,9 +47,9 @@ void quickSelect1(const std::string& header, std::vector<int> data) {
         return;
     }
 
-    int k_median = n / 2; // Middle of the vector as the key for median
-    int k_q1 = n / 4;      // 25th percentile key
-    int k_q3 = 3 * n / 4;  // 75th percentile key
+    int k_median = n / 2;           // Middle of the vector as the key for median
+    int k_q1 = (n + 1) / 4 - 1;     // 25th percentile key
+    int k_q3 = 3 * (n + 1) / 4 - 1; // 75th percentile key
 
     // Perform quickSelect to find the median
     int median = quickSelect(data, 0, n - 1, k_median);
@@ -76,3 +76,5 @@ void quickSelect1(const std::string& header, std::vector<int> data) {
     std::cout << "P75: " << q3 << std::endl;
     std::cout << "Max: " << maxVal << std::endl;
 }
+
+

@@ -9,11 +9,11 @@ Description: This file is the implementation file for the CountingSort.cpp file.
 
 
 void countingSort(const std::string& header, std::vector<int> data) {
-    std::unordered_map<int, int> counts;
+    std::unordered_map<int, int> counts; // Hash map to store counts of each unique value
 
     // Count occurrences of each unique value in data
-    for (int num : data) {
-        counts[num]++;
+    for (int num : data) { // for each number in the data vector
+        counts[num]++; // increment the count of the number
     }
 
     // Count number of unique values
@@ -26,7 +26,7 @@ void countingSort(const std::string& header, std::vector<int> data) {
     }
 
     // Sort the vector based on the keys
-    std::sort(countVector.begin(), countVector.end());
+    std::sort(countVector.begin(), countVector.end()); // sort the vector
 
     // Calculate cumulative count and find quartiles
     int total = 0;

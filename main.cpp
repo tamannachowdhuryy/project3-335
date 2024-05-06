@@ -7,14 +7,16 @@
 #include <vector>
 #include <string>
 #include <chrono>
-
+/*
+    @param filename: The name of the file to read.
+*/
 using namespace std;
 
 int main() {
     // Specify the file name here
-    string filename = "testInput.txt";
+    //string filename = "testInput.txt";
     //string filename = "test_input2.txt";
-    //string filename = "test_input3.txt";
+    string filename = "test_input3.txt";
 
     ifstream file(filename);
     if (!file.is_open()) {
@@ -43,13 +45,13 @@ int main() {
     auto start = std::chrono::high_resolution_clock::now();
 
     // Call the function to compute the five-number summary
-    std::cout << "StdSort:" << std::endl;
-    stdSort(header, data); // Pass the header string and the data vector
-    std::cout << std::endl;
-
-    // std::cout << "QuickSelect1:" << std::endl;
-    // quickSelect1(header, data); // Pass the header string and the data vector
+    // std::cout << "StdSort:" << std::endl;
+    // stdSort(header, data); // Pass the header string and the data vector
     // std::cout << std::endl;
+
+    std::cout << "QuickSelect1:" << std::endl;
+    quickSelect1(header, data); // Pass the header string and the data vector
+    std::cout << std::endl;
 
     // std::cout << "QuickSelect2:" << std::endl;
     // quickSelect2(header, data); // Pass the header string and the data vector

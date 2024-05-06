@@ -7,7 +7,11 @@ Description: This file is the implementation file for the CountingSort.cpp file.
 
 #include "CountingSort.hpp"
 
-
+/*
+    @param header: The header string for the box plot.
+    @param data: The input vector of integers.
+    @post: Outputs the minimum, maximum, and quartile values of the input data after sorting it.
+*/
 void countingSort(const std::string& header, std::vector<int> data) {
     std::unordered_map<int, int> counts; // Hash map to store counts of each unique value
 

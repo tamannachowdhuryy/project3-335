@@ -6,11 +6,11 @@ Description: This file is the implementation file for the StdSort.hpp file. This
 */
 
 /*
-    using std::sort to get the box plot data in ascending order
-    For project 3, given an input file of integer values, you will compute all the statistics included in a five-number summary or a box plot: the minimum value, the 25th, 50th, and 75th percentiles, and the maximum value.
-    The integers in the input will be sampled from a gamma distribution. Because of the characteristics of gamma distributions, as the input size increases, the number of unique values will grow slowly, and there will be an increasing number of duplicates, yet there is no absolute upper limit on the values. This will make the input a good candidate for a hash-based counting sort.
-    You will compute the five-number summary with each of the following methods, and benchmark the time taken for each method:
+    @param header: The header string for the box plot.
+    @param data: The input vector of integers.
+    @post: Outputs the minimum, maximum, and quartile values of the input data after sorting it.
 */
+
 
 #include "StdSort.hpp"
 

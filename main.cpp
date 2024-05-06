@@ -49,16 +49,16 @@ int main() {
     // stdSort(header, data); // Pass the header string and the data vector
     // std::cout << std::endl;
 
-    std::cout << "QuickSelect1:" << std::endl;
-    quickSelect1(header, data); // Pass the header string and the data vector
-    std::cout << std::endl;
+    // std::cout << "QuickSelect1:" << std::endl;
+    // quickSelect1(header, data); // Pass the header string and the data vector
+    // std::cout << std::endl;
 
     // std::cout << "QuickSelect2:" << std::endl;
     // quickSelect2(header, data); // Pass the header string and the data vector
     // std::cout << std::endl;
     
-    // std::cout << "CountingSort:" << std::endl;
-    // countingSort(header, data); // Pass the header string and the data vector
+    std::cout << "CountingSort:" << std::endl;
+    countingSort(header, data); // Pass the header string and the data vector
     
 
     // Measure time elapsed

@@ -101,10 +101,10 @@ void quickSelect2(const std::string& header, std::vector<int> data) {
         insertionSort(data, 0, n - 1);
     } else {
         // Use quickSelect for larger input sizes
-        std::set<int> keys = {0, (n + 3) / 4 - 1, (n + 1) / 2 - 1, 3 * (n + 1) / 4 - 1, n - 1};
+        std::set<int> keys = {0, (n + 3) / 4 - 1, (n + 1) / 2 - 1, 3 * (n + 1) / 4 - 1, n - 1}; // 
         quickSelect(data, 0, n - 1, keys);
     }
-   
+    //getting all the data and printing it out 
     std::cout << header << std::endl;
     std::cout << "Min: " << data[0] << std::endl;
     std::cout << "P25: " << data[(n + 3) / 4 - 1] << std::endl;

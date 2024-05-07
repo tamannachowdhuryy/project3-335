@@ -14,9 +14,9 @@ using namespace std;
 
 int main() {
     // Specify the file name here
-    //string filename = "testInput.txt";
+    string filename = "testInput.txt";
     //string filename = "test_input2.txt";
-    string filename = "test_input3.txt";
+    //string filename = "test_input3.txt";
 
     ifstream file(filename);
     if (!file.is_open()) {
@@ -53,12 +53,12 @@ int main() {
     // quickSelect1(header, data); // Pass the header string and the data vector
     // std::cout << std::endl;
 
-    // std::cout << "QuickSelect2:" << std::endl;
-    // quickSelect2(header, data); // Pass the header string and the data vector
-    // std::cout << std::endl;
+    std::cout << "QuickSelect2:" << std::endl;
+    quickSelect2(header, data); // Pass the header string and the data vector
+    std::cout << std::endl;
     
-    std::cout << "CountingSort:" << std::endl;
-    countingSort(header, data); // Pass the header string and the data vector
+    // std::cout << "CountingSort:" << std::endl;
+    // countingSort(header, data); // Pass the header string and the data vector
     
 
     // Measure time elapsed

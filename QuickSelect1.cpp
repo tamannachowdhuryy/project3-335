@@ -50,43 +50,6 @@ int quickSelect(std::vector<int>& arr, int left, int right, int k) {
     @return: The selected element.
 */
 
-// Function to output the box plot using quickSelect1
-// void quickSelect1(const std::string& header, std::vector<int> data) {
-//     int n = data.size();
-//     if (n == 0) {
-//         std::cerr << "Error: Empty vector!" << std::endl;
-//         return;
-//     }
-
-//     int k_median = n / 2;           // Middle of the vector as the key for median
-//     int k_q1 = (n + 1) / 4 - 1;     // 25th percentile key
-//     int k_q3 = 3 * (n + 1) / 4 - 1; // 75th percentile key
-
-//     // Perform quickSelect to find the median
-//     int median = quickSelect(data, 0, n - 1, k_median);
-
-//     // Perform quickSelect to find the 25th percentile (Q1)
-//     int q1 = quickSelect(data, 0, n - 1, k_q1);
-
-//     // Perform quickSelect to find the 75th percentile (Q3)
-//     int q3 = quickSelect(data, 0, n - 1, k_q3);
-
-//     int q2 = median; // Q2 (median) is equal to the median value
-
-//     // Sort the data vector for finding min and max
-//     std::sort(data.begin(), data.end());
-
-//     int minVal = data.front(); // Get the minimum value
-//     int maxVal = data.back();  // Get the maximum value
-
-//     // Output the results
-//     std::cout << header << std::endl;
-//     std::cout << "Min: " << minVal << std::endl;
-//     std::cout << "P25: " << q1 << std::endl;
-//     std::cout << "P50: " << q2 << std::endl;
-//     std::cout << "P75: " << q3 << std::endl;
-//     std::cout << "Max: " << maxVal << std::endl;
-// }
 
 void quickSelect1(const std::string& header, std::vector<int> data) {
     int n = data.size();

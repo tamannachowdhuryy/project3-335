@@ -25,7 +25,7 @@ void countingSort(const std::string& header, std::vector<int> data) {
 
     // Copy key-value pairs from the hash map to a vector
     std::vector<std::pair<int, int>> countVector;
-    for (const auto& entry : counts) {
+    for (auto entry : counts) {
         countVector.push_back(entry);
     }
 

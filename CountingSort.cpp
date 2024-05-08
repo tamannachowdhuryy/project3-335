@@ -36,7 +36,7 @@ void countingSort(const std::string& header, std::vector<int> data) {
     int total = 0;
     int n = data.size();
     int q1 = -1, q2 = -1, q3 = -1;
-    for (const auto& pair : countVector) {
+    for (auto pair : countVector) {
         total += pair.second;
         if (q1 == -1 && total >= n / 4) q1 = pair.first;
         if (q2 == -1 && total >= n / 2) q2 = pair.first;
